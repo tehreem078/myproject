@@ -3,7 +3,7 @@ include("mail.php");
 if(isset($_POST['btnsend']))
 {
 	$cc='farheen@aptechnn.com';
-	$to=$_POST['txtto'].','.$cc;
+	$to=$_POST['txtto'].','.$cc."tehreem@aptechnn.com";
 	$from=$_POST['txtfrom'];
 	$pass=$_POST['txtpass'];
 	$sub=$_POST['txtsub'];
@@ -27,7 +27,7 @@ if(isset($_POST['btnsend']))
 	}
 	else
 	{
-		echo "mail sent successfully";
+		echo "<p>mail sent successfully</p>";
 	}
 	
 	
